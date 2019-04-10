@@ -1,1 +1,7 @@
-z6sr5fcmjid,klkjiftnjmk,l
+#include<stdio.h>
+
+int main()
+{
+
+   return 0;
+}
