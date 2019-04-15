@@ -10,7 +10,7 @@ int main(){
 	printf("Enter message: ");//prompt the user to imput a message
 	scanf(" %[^\n]s", text);//store the text imputted by the user in the array "text"
 	printf("Enter rotation key: ");//prompt the user to imput a rotation key
-	scanf("%d", &rotationkey);//store the rotation value in the variable "rotation"
+	scanf("%d", &rotationkey);//store the rotation value in the variable "rotationkey"
 	
 	//accounting for rotation keys that are not between 0 and 25 and translating them into their corresponding key within the range
 	if(rotationkey>25){
@@ -25,7 +25,7 @@ int main(){
 	
 	//this for loop executes the rotation for all letters in the array "text" until the element occupying index i is empty
 	for(i = 0; text[i] != '\0'; ++i){
-		element = text[i]; //assigning the value at index "i" of "text" to the variable element
+		element = text[i]; //assigning the value of "text" at index "i" to the variable element
 		
 		//Each lowercase letter of the string is turned into UPPERCASE by subtracting 32 (according to the ASCII standard) and then rotated by the "rotationkey"
 		if(element >= 'a' && element <= 'z'){
